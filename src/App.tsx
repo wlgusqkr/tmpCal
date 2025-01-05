@@ -1,12 +1,13 @@
 import "./App.css";
 import CustomCalendar from "./components/Calender";
-import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Post from "./components/Post";
 
 function App() {
   return (
     <>
-      <Header />
-      <div className="flex flex-col px-6">
+      <Menu/>
+      <div className="flex flex-col px-6 mt-6">
         <div className=" flex-col justify-start items-start gap-4 inline-flex">
           <div className="self-stretch h-[70px] flex-col justify-start items-start flex overflow-hidden">
             <div className="px-4 justify-start items-center gap-6 inline-flex overflow-hidden">

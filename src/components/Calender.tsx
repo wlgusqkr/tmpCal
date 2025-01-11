@@ -19,7 +19,7 @@ function CustomCalendar() {
   }
   return (
     <div>
-      <calendar
+      <Calendar
         locale="ko-KR"
         onChange={onChange}
         value={value}
@@ -106,9 +106,9 @@ function CustomCalendar() {
             </div>
           );
         }}
-        formatDay={(locale, date) =>
-          date.toLocaleString("en", { day: "numeric" })
-        }
+        // formatDay={(locale, date) =>
+        //   date.toLocaleString("en", { day: "numeric" })
+        // }
         className="customCalendar w-full" // 여기서 .customCalendar에 대한 CSS를 작성
       />
     </div>

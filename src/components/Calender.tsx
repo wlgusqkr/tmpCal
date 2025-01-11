@@ -13,13 +13,13 @@ function CustomCalendar() {
   const [value, onChange] = useState<Value>(null);
   // 내일 할 거 버튼이 눌리면 그 안에 시간이 펼쳐지게
   // 예약된 시간이 있다면 흰색으로 표시
-  // 시나리오는 버튼을 누르면 
+  // 시나리오는 버튼을 누르면
   if (value instanceof Date) {
-    console.log(value)
+    console.log(value);
   }
   return (
     <div>
-      <Calendar
+      <calendar
         locale="ko-KR"
         onChange={onChange}
         value={value}
@@ -31,7 +31,7 @@ function CustomCalendar() {
         tileDisabled={({ date }) => {
           const offset = date.getTimezoneOffset() / 60;
           const dateOffset = new Date(date);
-          dateOffset.setHours(date.getHours() - offset)
+          dateOffset.setHours(date.getHours() - offset);
 
           const today = new Date();
           const isPast = date < new Date(today.setHours(0, 0, 0, 0));
@@ -43,7 +43,7 @@ function CustomCalendar() {
         tileClassName={({ date }) => {
           const offset = date.getTimezoneOffset() / 60;
           const dateOffset = new Date(date);
-          dateOffset.setHours(date.getHours() - offset)
+          dateOffset.setHours(date.getHours() - offset);
 
           const today = new Date();
           const isReserved = reservedDates.includes(

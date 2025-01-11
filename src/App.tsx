@@ -10,7 +10,7 @@ function App() {
         <div className=" flex-col justify-start items-start gap-4 inline-flex">
           <div className="self-stretch h-[70px] flex-col justify-start items-start flex overflow-hidden">
             <div className="px-4 justify-start items-center gap-6 inline-flex overflow-hidden">
-              <div className="text-[#3c3c43]/60 text-xs font-normal leading-none">
+              <div className=" text-xs font-normal leading-none">
                 예약자명
               </div>
             </div>

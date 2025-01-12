@@ -23,7 +23,7 @@ function App() {
           <div className="self-stretch h-[70px] flex-col justify-start items-start flex overflow-hidden">
             <div className="px-4 justify-center items-center gap-6 inline-flex overflow-hidden">
               <div className="text-[#3c3c43]/60 text-xs font-normal leading-none">
-                전화번호114332
+                전화번호1143322
               </div>
             </div>
             <div className="self-stretch p-4 bg-white border-b border-black justify-start items-center inline-flex overflow-hidden">

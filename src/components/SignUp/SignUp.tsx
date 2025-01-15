@@ -45,7 +45,7 @@ const SignUp = () => {
         </div>
         <div className="text-xs text-gray-500 mb-2">
           <p className="">아이디는 예시처럼 입력해주세요</p>
-          <p>예) 409-2 -> 4092</p>
+          <p>예 &#41; 409-2 -&gt; 4092</p>
         </div>
         <button
           onClick={handleSignUp}

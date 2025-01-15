@@ -39,12 +39,17 @@ const InputContainer = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-2xl font-bold text-center mb-6">Weekly Meal Plan</h1>
+    <div className="px-6 pb-6 pt-2 bg-gray-100 min-h-screen">
+      <h1 className="text-xl font-bold text-center mb-2">
+        시간표와 생활 패턴에 따른 식사 계획 등록
+      </h1>
+      <p className="text-center text-gray-500 text-sm mb-3">
+        먹는 시간에 체크를 눌러주세요
+      </p>
       <div className="space-y-4">
         {days.map((day) => (
-          <div key={day} className="bg-white p-4 rounded-lg shadow">
-            <h2 className="text-lg font-semibold mb-2">{day}</h2>
+          <div key={day} className="bg-white p-[14px] rounded-lg shadow">
+            <h2 className="text-lg font-semibold mb-1">{day}</h2>
             <div className="flex space-x-4">
               {meals.map((meal) => (
                 <label key={meal} className="flex items-center space-x-2">

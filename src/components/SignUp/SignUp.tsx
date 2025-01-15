@@ -43,6 +43,10 @@ const SignUp = () => {
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
           />
         </div>
+        <div className="text-xs text-gray-500 mb-2">
+          <p className="">아이디는 예시처럼 입력해주세요</p>
+          <p>예) 409-2 -> 4092</p>
+        </div>
         <button
           onClick={handleSignUp}
           className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"

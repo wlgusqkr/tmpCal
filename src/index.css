@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 
 #root {
   background-color: white;
-  max-width: 402px;
+  max-width: 500px;
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   height: 100vh;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,12 +25,10 @@ body {
   background-color: #dcdcdc;
 }
 
-
 /* 달력 제목 flex */
 .customCalendar .react-calendar__navigation {
   display: flex;
 }
-
 
 .customCalendar .react-calendar__navigation__label {
   padding: 0.6em 1.2em;
@@ -77,30 +75,29 @@ body {
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
-  line-height: 13px; 
+  line-height: 13px;
   letter-spacing: 0.06px;
-  color: var(--Grays-Gray, var(--Grays-Gray, #8E8E93));
-
+  color: var(--Grays-Gray, var(--Grays-Gray, #8e8e93));
 }
 
 /* 일 월 화 수 ... 에 밑줄 제거 */
-.customCalendar .react-calendar__month-view__weekdays__weekday abbr{
+.customCalendar .react-calendar__month-view__weekdays__weekday abbr {
   text-decoration: none;
 }
 
 /* 과거 회색 처리 */
 .past {
-  color: #8E8E93;
+  color: #8e8e93;
 }
 /* 예약된 칸 처리 */
 .reserved {
-  color: #8E8E93;
+  color: #8e8e93;
   /* background-color: #e0e0e0; */
 }
 
 /* active시 원 처리 */
 .customCalendar .react-calendar__tile--active {
-  background-color: #CB6015;
+  background-color: #cb6015;
   color: white;
   text-align: center;
 }
